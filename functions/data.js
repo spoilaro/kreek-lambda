@@ -5,7 +5,7 @@ exports.handler = async (event, context, callback) => {
     "https://sampo.thl.fi/pivot/prod/en/vaccreg/cov19cov/fact_cov19cov.json"
   );
 
-  let data = await res.data.dataset.label;
+  let data = await res.data.dataset;
 
   let response = {
     statusCode: 200,
