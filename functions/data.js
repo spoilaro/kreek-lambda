@@ -12,6 +12,9 @@ exports.handler = async (event, context, callback) => {
       });
     })
     .catch((err) => {
-      callback(err);
+      callback({
+        statusCode: 400,
+        body: err,
+      });
     });
 };
