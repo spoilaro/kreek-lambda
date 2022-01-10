@@ -1,5 +1,4 @@
 const axios = require("axios");
-const fs = require("fs");
 
 exports.handler = async (event, context, callback) => {
   let place = event.queryStringParameters.place;
